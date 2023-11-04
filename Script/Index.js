@@ -14,6 +14,18 @@ let wordsList = [
 ];
 
 let counter = 0;
+let word1 = false;
+let word2 = false;
+let word3 = false;
+let word4 = false;
+let word5 = false;
+let word6 = false;
+let word7 = false;
+let word8 = false;
+let word9 = false;
+let word10 = false;
+let word11 = false;
+let word12 = false;
 
 function submitFunction(){
 
@@ -32,7 +44,7 @@ function submitFunction(){
     let lettersList11 = wordsList[10].split("");
     let lettersList12 = wordsList[11].split("");
 
-    if (wordInput === wordsList[0]){
+    if (wordInput === wordsList[0] && word1 === false){
         console.log("1) Correct");
 
         document.getElementById("a1").innerHTML = lettersList1[0].toUpperCase();
@@ -50,9 +62,11 @@ function submitFunction(){
 
         document.getElementById("aQuestion").style.color = "green";
         counter++;
+
+        word1 = true;
     }
 
-    if (wordInput === wordsList[1]){
+    if (wordInput === wordsList[1] && word2 === false){
         console.log("2) Correct");
         document.getElementById("b1").innerHTML = lettersList2[0].toUpperCase();
         document.getElementById("b2").innerHTML = lettersList2[1].toUpperCase();
@@ -65,6 +79,8 @@ function submitFunction(){
 
         document.getElementById("bQuestion").style.color = "green";
         counter++;
+
+        word2 = true;
     }
 
     if (wordInput === wordsList[2]){
@@ -83,6 +99,8 @@ function submitFunction(){
 
         document.getElementById("cQuestion").style.color = "green";
         counter++;
+
+        word3 = true;
     }
 
     if (wordInput === wordsList[3]){
@@ -98,6 +116,8 @@ function submitFunction(){
 
         document.getElementById("dQuestion").style.color = "green";
         counter++;
+
+        word4 = true;
     }
 
     if (wordInput === wordsList[4]){
@@ -117,6 +137,8 @@ function submitFunction(){
 
         document.getElementById("eQuestion").style.color = "green";
         counter++;
+
+        word5 = true;
     }
 
     if (wordInput === wordsList[5]){
@@ -136,6 +158,8 @@ function submitFunction(){
 
         document.getElementById("fQuestion").style.color = "green";
         counter++;
+
+        word6 = true;
     }
 
     if (wordInput === wordsList[6]){
@@ -150,6 +174,8 @@ function submitFunction(){
 
         document.getElementById("gQuestion").style.color = "green";
         counter++;
+
+        word7 = true;
     }
 
     if (wordInput === wordsList[7]){
@@ -170,6 +196,8 @@ function submitFunction(){
 
         document.getElementById("hQuestion").style.color = "green";
         counter++;
+
+        word8 = true;
     }
 
     if (wordInput === wordsList[8]){
@@ -184,6 +212,8 @@ function submitFunction(){
 
         document.getElementById("iQuestion").style.color = "green";
         counter++;
+
+        word9 = true;
     }
 
     if (wordInput === wordsList[9]){
@@ -198,6 +228,8 @@ function submitFunction(){
         document.getElementById("wordInput").value = "";
         document.getElementById("jQuestion").style.color = "green";
         counter++;
+
+        word10 = true;
     }
 
     if (wordInput === wordsList[10]){
@@ -214,6 +246,8 @@ function submitFunction(){
         document.getElementById("wordInput").value = "";
         document.getElementById("kQuestion").style.color = "green";
         counter++;
+
+        word11 = true;
     }
 
     if (wordInput === wordsList[11]){
@@ -231,6 +265,8 @@ function submitFunction(){
 
         document.getElementById("lQuestion").style.color = "green";
         counter++;
+
+        word12 = true;
     }
 
     if (counter === 12){
