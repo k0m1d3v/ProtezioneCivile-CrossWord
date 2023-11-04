@@ -1,0 +1,50 @@
+.FullSquare{
+    background-color: transparent;
+    width: 25px;
+    height: 25px;
+    font-size: 16px;
+    font-family: Arial, cursive;
+    border-collapse: collapse;
+    border: 1px solid dimgray;
+    text-align: center;
+}
+
+.TransparentSquare{
+    background-color: transparent;
+    width: 25px;
+    height: 25px;
+    font-size: 16px;
+    font-family: Arial, cursive;
+    border-collapse: collapse;
+    border: 1px solid transparent;
+    text-align: center;
+}
+
+.CentralSquare{
+    background-color: transparent;
+    width: 25px;
+    height: 25px;
+    font-size: 16px;
+    font-family: Arial, monospace;
+    border-collapse: collapse;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.TotalBlackSquare{
+    background-color: black;
+    width: 25px;
+    height: 25px;
+    font-size: 16px;
+    font-family: Arial, monospace;
+    border-collapse: collapse;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.table{
+    max-width: 100%;
+    cursor: context-menu;
+    float: left;
+    padding: 20px;
+}
