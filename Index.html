@@ -9,329 +9,351 @@
     <title>CrossWordGame</title>
 </head>
 <body>
-    <!-- Creazione di una table che fungerà da supporto (è consigliabile farsi dei calcoli)-->
-    <table class="table">
-        <tr>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="CentralSquare">I</td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-        </tr>
 
-        <tr>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="CentralSquare">O</td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-        </tr>
+<table class="table">
+    <tr>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td id="a1" class=CentralSquare></td>
+        <td id="a2" class="FullSquare"></td>
+        <td id="a3" class="FullSquare"></td>
+        <td id="a4" class="FullSquare"></td>
+        <td id="a5" class="FullSquare"></td>
+        <td id="a6" class="FullSquare"></td>
+        <td id="a7" class="FullSquare"></td>
+        <td id="a8" class="FullSquare"></td>
+        <td id="a9" class="FullSquare"></td>
+        <td id="a10" class="FullSquare"></td>
+        <td id="a11" class="FullSquare"></td>
+    </tr>
 
-        <tr>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TotalBlackSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-        </tr>
+    <tr>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td id="b1" class="FullSquare"></td>
+        <td id="b2" class="FullSquare"></td>
+        <td id="b3" class="FullSquare"></td>
+        <td id="b4" class="FullSquare"></td>
+        <td id="b5" class="FullSquare"></td>
+        <td id="b6" class="FullSquare"></td>
+        <td id="b7" class="CentralSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+    </tr>
 
-        <tr>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="CentralSquare">N</td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-        </tr>
+    <tr>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TotalBlackSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+    </tr>
 
-        <tr>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="CentralSquare">O</td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-        </tr>
+    <tr>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td id="c1" class="FullSquare"></td>
+        <td id="c2" class="FullSquare"></td>
+        <td id="c3" class="FullSquare"></td>
+        <td id="c4" class="FullSquare"></td>
+        <td id="c5" class="CentralSquare"></td>
+        <td id="c6" class="FullSquare"></td>
+        <td id="c7" class="FullSquare"></td>
+        <td id="c8" class="FullSquare"></td>
+        <td id="c9" class="FullSquare"></td>
+        <td id="c10" class="FullSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+    </tr>
 
-        <tr>
-            <td class="FullSquare">E</td>
-            <td class="FullSquare">S</td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare">S</td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="CentralSquare">N</td>
-            <td class="FullSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-        </tr>
+    <tr>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td id="d1" class="FullSquare"></td>
+        <td id="d2" class="FullSquare"></td>
+        <td id="d3" class="CentralSquare"></td>
+        <td id="d4" class="FullSquare"></td>
+        <td id="d5" class="FullSquare"></td>
+        <td id="d6" class="FullSquare"></td>
+        <td id="d7" class="FullSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+    </tr>
 
-        <tr>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TotalBlackSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-        </tr>
+    <tr>
+        <td id="e1" class="FullSquare"></td>
+        <td id="e2" class="FullSquare"></td>
+        <td id="e3" class="FullSquare"></td>
+        <td id="e4" class="FullSquare"></td>
+        <td id="e5" class="FullSquare"></td>
+        <td id="e6" class="FullSquare"></td>
+        <td id="e7" class="FullSquare"></td>
+        <td id="e8" class="FullSquare"></td>
+        <td id="e9" class="FullSquare"></td>
+        <td id="e10" class="CentralSquare"></td>
+        <td id="e11" class="FullSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+    </tr>
 
-        <tr>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="CentralSquare">R</td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="TransparentSquare"></td>
-        </tr>
+    <tr>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TotalBlackSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+    </tr>
 
-        <tr>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="CentralSquare">I</td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare">L</td>
-            <td class="FullSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-        </tr>
+    <tr>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td id="f1" class="FullSquare"></td>
+        <td id="f2" class="CentralSquare"></td>
+        <td id="f3" class="FullSquare"></td>
+        <td id="f4" class="FullSquare"></td>
+        <td id="f5" class="FullSquare"></td>
+        <td id="f6" class="FullSquare"></td>
+        <td id="f7" class="FullSquare"></td>
+        <td id="f8" class="FullSquare"></td>
+        <td id="f9" class="FullSquare"></td>
+        <td id="f10" class="FullSquare"></td>
+        <td id="f11" class="FullSquare"></td>
+        <td class="TransparentSquare"></td>
+    </tr>
 
-        <tr>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="FullSquare">A</td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="CentralSquare">S</td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare">T</td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare">E</td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-        </tr>
+    <tr>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td id="g1" class="FullSquare"></td>
+        <td id="g2" class="CentralSquare"></td>
+        <td id="g3" class="FullSquare"></td>
+        <td id="g4" class="FullSquare"></td>
+        <td id="g5" class="FullSquare"></td>
+        <td id="g6" class="FullSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+    </tr>
 
-        <tr>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="CentralSquare">C</td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-        </tr>
+    <tr>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td id="h1" class="FullSquare"></td>
+        <td id="h2" class="FullSquare"></td>
+        <td id="h3" class="FullSquare"></td>
+        <td id="h4" class="FullSquare"></td>
+        <td id="h5" class="CentralSquare"></td>
+        <td id="h6" class="FullSquare"></td>
+        <td id="h7" class="FullSquare"></td>
+        <td id="h8" class="FullSquare"></td>
+        <td id="h9" class="FullSquare"></td>
+        <td id="h10" class="FullSquare"></td>
+        <td id="h11" class="FullSquare"></td>
+        <td id="h12" class="FullSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+    </tr>
 
-        <tr>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="CentralSquare">H</td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-        </tr>
+    <tr>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td id="i1" class="FullSquare"></td>
+        <td id="i2" class="CentralSquare"></td>
+        <td id="i3" class="FullSquare"></td>
+        <td id="i4" class="FullSquare"></td>
+        <td id="i5" class="FullSquare"></td>
+        <td id="i6" class="FullSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+    </tr>
 
-        <tr>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="CentralSquare">I</td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-        </tr>
+    <tr>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td id="j1" class="FullSquare"></td>
+        <td id="j2" class="CentralSquare"></td>
+        <td id="j3" class="FullSquare"></td>
+        <td id="j4" class="FullSquare"></td>
+        <td id="j5" class="FullSquare"></td>
+        <td id="j6" class="FullSquare"></td>
+        <td id="j7" class="FullSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+    </tr>
 
-        <tr>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="FullSquare"></td>
-            <td class="CentralSquare">O</td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-            <td class="TransparentSquare"></td>
-        </tr>
-    </table>
+    <tr>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td id="k1" class="CentralSquare"></td>
+        <td id="k2" class="FullSquare"></td>
+        <td id="k3" class="FullSquare"></td>
+        <td id="k4" class="FullSquare"></td>
+        <td id="k5" class="FullSquare"></td>
+        <td id="k6" class="FullSquare"></td>
+        <td id="k7" class="FullSquare"></td>
+        <td id="k8" class="FullSquare"></td>
+        <td id="k9" class="FullSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+    </tr>
+
+    <tr>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td id="l1" class="FullSquare"></td>
+        <td id="l2" class="FullSquare"></td>
+        <td id="l3" class="FullSquare"></td>
+        <td id="l4" class="FullSquare"></td>
+        <td id="l5" class="FullSquare"></td>
+        <td id="l6" class="FullSquare"></td>
+        <td id="l7" class="FullSquare"></td>
+        <td id="l8" class="CentralSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+        <td class="TransparentSquare"></td>
+    </tr>
+</table>
+
+<h3>Domande:</h3>
+<p id="aQuestion">1. Rischio causato da forti pioggie.</p>
+<p id="bQuestion">2. Sinonimo di pericolo.</p>
+<p id="cQuestion">3. Si offre a titolo gratuito.</p>
+<p id="dQuestion">4. Un evento metereologico.</p>
+<p id="eQuestion">5. Può essere ... alle radiazioni.</p>
+<p id="fQuestion">6. Si attua per impedire la diffusione delle malattie.</p>
+<p id="gQuestion">7. Non lo è un militare.</p>
+<p id="hQuestion">8. Rappresentano una nazione all'estero.</p>
+<p id="iQuestion">9. Luogo di formazione studentesca</p>
+<p id="jQuestion">10. Uno dei tipi di rischio.</p>
+<p id="kQuestion">11. Può essere stradale</p>
+<p id="lQuestion">12. Lo prestano i volontari.</p>
+
+<label for="wordInput" id="submitLbl">Inserisci la parola:<br></label>
+<input type="text" id="wordInput"><br>
+<button onclick="submitFunction()" id="submitBtn">Invia!</button>
+
+<h1 id="victoryMessage" style="display: none">Hai vinto!</h1>
+
+<script src="Index.js"></script>
 </body>
 </html>
