@@ -275,5 +275,17 @@ function submitFunction(){
         document.getElementById("submitLbl").style.display = "none";
         document.getElementById("victoryMessage").style.display = "block";
         document.getElementById("victoryMessage").style.color = "green";
+        document.getElementById("a1").style.backgroundColor = "green";
+        document.getElementById("b7").style.backgroundColor = "green";
+        document.getElementById("c5").style.backgroundColor = "green";
+        document.getElementById("d3").style.backgroundColor = "green";
+        document.getElementById("e10").style.backgroundColor = "green";
+        document.getElementById("f2").style.backgroundColor = "green";
+        document.getElementById("g2").style.backgroundColor = "green";
+        document.getElementById("h5").style.backgroundColor = "green";
+        document.getElementById("i2").style.backgroundColor = "green";
+        document.getElementById("j2").style.backgroundColor = "green";
+        document.getElementById("k1").style.backgroundColor = "green";
+        document.getElementById("l8").style.backgroundColor = "green";
     }
 }
