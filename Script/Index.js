@@ -316,7 +316,7 @@ function showSuggestionsFunction(){
 
         document.getElementById("f3").innerHTML = "E";
         document.getElementById("f6").innerHTML = "N";
-        document.getElementById("f9").innerHTML = "N";
+        document.getElementById("f10").innerHTML = "N";
 
         document.getElementById("g1").innerHTML = "C";
         document.getElementById("g4").innerHTML = "I";
@@ -326,7 +326,8 @@ function showSuggestionsFunction(){
         document.getElementById("h9").innerHTML = "T";
         document.getElementById("h12").innerHTML = "I";
 
-        document.getElementById("i1").innerHTML = "A";
+        document.getElementById("i1").innerHTML = "S";
+        document.getElementById("i5").innerHTML = "L";
 
         document.getElementById("j1").innerHTML = "C";
         document.getElementById("j4").innerHTML = "M";
@@ -343,49 +344,54 @@ function showSuggestionsFunction(){
     }else{
         console.log("Suggestions are now set to false");
 
-        if (!word1){
-            document.getElementById("a2").innerHTML = "";
-            document.getElementById("a11").innerHTML = "";
-        }if (!word2){
-            document.getElementById("b2").innerHTML = "";
-            document.getElementById("b7").innerHTML = "";
-        }if (!word3){
-            document.getElementById("c1").innerHTML = "";
-            document.getElementById("c4").innerHTML = "";
-            document.getElementById("c7").innerHTML = "";
-        }if (!word4){
-            document.getElementById("d1").innerHTML = "";
-            document.getElementById("d4").innerHTML = "";
-        }if (!word5){
-            document.getElementById("e1").innerHTML = "";
-            document.getElementById("e5").innerHTML = "";
-            document.getElementById("e8").innerHTML = "";
-            document.getElementById("e10").innerHTML = "";
-        }if (!word6){
-            document.getElementById("f3").innerHTML = "";
-            document.getElementById("f6").innerHTML = "";
-            document.getElementById("f9").innerHTML = "";
-        }if (!word7){
-            document.getElementById("g1").innerHTML = "";
-            document.getElementById("g4").innerHTML = "";
-        }if (!word8){
-            document.getElementById("h1").innerHTML = "";
-            document.getElementById("h6").innerHTML = "";
-            document.getElementById("h9").innerHTML = "";
-            document.getElementById("h12").innerHTML = "";
-        }if (!word9){
-            document.getElementById("i1").innerHTML = "";
-        }if (!word10){
-            document.getElementById("j1").innerHTML = "";
-            document.getElementById("j4").innerHTML = "";
-            document.getElementById("j6").innerHTML = "";
-        }if (!word11){
-            document.getElementById("k1").innerHTML = "";
-            document.getElementById("k4").innerHTML = "";
-            document.getElementById("k9").innerHTML = "";
-        }if (!word12){
-            document.getElementById("l1").innerHTML = "";
-            document.getElementById("l4").innerHTML = "";
+        let areSolutionsActive = document.getElementById("solutions").checked;
+
+        if (!areSolutionsActive){
+            if (!word1){
+                document.getElementById("a2").innerHTML = "";
+                document.getElementById("a11").innerHTML = "";
+            }if (!word2){
+                document.getElementById("b2").innerHTML = "";
+                document.getElementById("b7").innerHTML = "";
+            }if (!word3){
+                document.getElementById("c1").innerHTML = "";
+                document.getElementById("c4").innerHTML = "";
+                document.getElementById("c7").innerHTML = "";
+            }if (!word4){
+                document.getElementById("d1").innerHTML = "";
+                document.getElementById("d4").innerHTML = "";
+            }if (!word5){
+                document.getElementById("e1").innerHTML = "";
+                document.getElementById("e5").innerHTML = "";
+                document.getElementById("e8").innerHTML = "";
+                document.getElementById("e10").innerHTML = "";
+            }if (!word6){
+                document.getElementById("f3").innerHTML = "";
+                document.getElementById("f6").innerHTML = "";
+                document.getElementById("f10").innerHTML = "";
+            }if (!word7){
+                document.getElementById("g1").innerHTML = "";
+                document.getElementById("g4").innerHTML = "";
+            }if (!word8){
+                document.getElementById("h1").innerHTML = "";
+                document.getElementById("h6").innerHTML = "";
+                document.getElementById("h9").innerHTML = "";
+                document.getElementById("h12").innerHTML = "";
+            }if (!word9){
+                document.getElementById("i1").innerHTML = "";
+                document.getElementById("i5").innerHTML = "";
+            }if (!word10){
+                document.getElementById("j1").innerHTML = "";
+                document.getElementById("j4").innerHTML = "";
+                document.getElementById("j6").innerHTML = "";
+            }if (!word11){
+                document.getElementById("k1").innerHTML = "";
+                document.getElementById("k4").innerHTML = "";
+                document.getElementById("k9").innerHTML = "";
+            }if (!word12){
+                document.getElementById("l1").innerHTML = "";
+                document.getElementById("l4").innerHTML = "";
+            }
         }
     }
 }
