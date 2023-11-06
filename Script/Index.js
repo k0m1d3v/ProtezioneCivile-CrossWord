@@ -156,7 +156,7 @@ function showSolutionsFunction(){
         console.log("Solutions are now set to false");
 
         if (!word1){
-            document.getElementById("a1").innerHTML = "1.";
+            document.getElementById("a1").innerHTML = "";
             document.getElementById("a2").innerHTML = "";
             document.getElementById("a3").innerHTML = "";
             document.getElementById("a4").innerHTML = "";
@@ -169,7 +169,7 @@ function showSolutionsFunction(){
             document.getElementById("a11").innerHTML = "";
         }
         if (!word2){
-            document.getElementById("b1").innerHTML = "2.";
+            document.getElementById("b1").innerHTML = "";
             document.getElementById("b2").innerHTML = "";
             document.getElementById("b3").innerHTML = "";
             document.getElementById("b4").innerHTML = "";
@@ -178,7 +178,7 @@ function showSolutionsFunction(){
             document.getElementById("b7").innerHTML = "";
         }
         if (!word3){
-            document.getElementById("c1").innerHTML = "3.";
+            document.getElementById("c1").innerHTML = "";
             document.getElementById("c2").innerHTML = "";
             document.getElementById("c3").innerHTML = "";
             document.getElementById("c4").innerHTML = "";
@@ -190,7 +190,7 @@ function showSolutionsFunction(){
             document.getElementById("c10").innerHTML = "";
         }
         if (!word4){
-            document.getElementById("d1").innerHTML = "4.";
+            document.getElementById("d1").innerHTML = "";
             document.getElementById("d2").innerHTML = "";
             document.getElementById("d3").innerHTML = "";
             document.getElementById("d4").innerHTML = "";
@@ -199,7 +199,7 @@ function showSolutionsFunction(){
             document.getElementById("d7").innerHTML = "";
         }
         if (!word5){
-            document.getElementById("e1").innerHTML = "5.";
+            document.getElementById("e1").innerHTML = "";
             document.getElementById("e2").innerHTML = "";
             document.getElementById("e3").innerHTML = "";
             document.getElementById("e4").innerHTML = "";
@@ -213,7 +213,7 @@ function showSolutionsFunction(){
 
         }
         if (!word6){
-            document.getElementById("f1").innerHTML = "6.";
+            document.getElementById("f1").innerHTML = "";
             document.getElementById("f2").innerHTML = "";
             document.getElementById("f3").innerHTML = "";
             document.getElementById("f4").innerHTML = "";
@@ -226,7 +226,7 @@ function showSolutionsFunction(){
             document.getElementById("f11").innerHTML = "";
         }
         if (!word7){
-            document.getElementById("g1").innerHTML = "7.";
+            document.getElementById("g1").innerHTML = "";
             document.getElementById("g2").innerHTML = "";
             document.getElementById("g3").innerHTML = "";
             document.getElementById("g4").innerHTML = "";
@@ -234,7 +234,7 @@ function showSolutionsFunction(){
             document.getElementById("g6").innerHTML = "";
         }
         if (!word8){
-            document.getElementById("h1").innerHTML = "8.";
+            document.getElementById("h1").innerHTML = "";
             document.getElementById("h2").innerHTML = "";
             document.getElementById("h3").innerHTML = "";
             document.getElementById("h4").innerHTML = "";
@@ -248,7 +248,7 @@ function showSolutionsFunction(){
             document.getElementById("h12").innerHTML = "";
         }
         if (!word9){
-            document.getElementById("i1").innerHTML = "9.";
+            document.getElementById("i1").innerHTML = "";
             document.getElementById("i2").innerHTML = "";
             document.getElementById("i3").innerHTML = "";
             document.getElementById("i4").innerHTML = "";
@@ -256,7 +256,7 @@ function showSolutionsFunction(){
             document.getElementById("i6").innerHTML = "";
         }
         if (!word10){
-            document.getElementById("j1").innerHTML = "10.";
+            document.getElementById("j1").innerHTML = "";
             document.getElementById("j2").innerHTML = "";
             document.getElementById("j3").innerHTML = "";
             document.getElementById("j4").innerHTML = "";
@@ -265,7 +265,7 @@ function showSolutionsFunction(){
             document.getElementById("j7").innerHTML = "";
         }
         if (!word11){
-            document.getElementById("k1").innerHTML = "11.";
+            document.getElementById("k1").innerHTML = "";
             document.getElementById("k2").innerHTML = "";
             document.getElementById("k3").innerHTML = "";
             document.getElementById("k4").innerHTML = "";
@@ -276,7 +276,7 @@ function showSolutionsFunction(){
             document.getElementById("k9").innerHTML = "";
         }
         if (!word12){
-            document.getElementById("l1").innerHTML = "12.";
+            document.getElementById("l1").innerHTML = "";
             document.getElementById("l2").innerHTML = "";
             document.getElementById("l3").innerHTML = "";
             document.getElementById("l4").innerHTML = "";
@@ -354,14 +354,14 @@ function showSuggestionsFunction(){
                 document.getElementById("b2").innerHTML = "";
                 document.getElementById("b7").innerHTML = "";
             }if (!word3){
-                document.getElementById("c1").innerHTML = "3.";
+                document.getElementById("c1").innerHTML = "";
                 document.getElementById("c4").innerHTML = "";
                 document.getElementById("c7").innerHTML = "";
             }if (!word4){
-                document.getElementById("d1").innerHTML = "4.";
+                document.getElementById("d1").innerHTML = "";
                 document.getElementById("d4").innerHTML = "";
             }if (!word5){
-                document.getElementById("e1").innerHTML = "5.";
+                document.getElementById("e1").innerHTML = "";
                 document.getElementById("e5").innerHTML = "";
                 document.getElementById("e8").innerHTML = "";
                 document.getElementById("e10").innerHTML = "";
@@ -370,26 +370,26 @@ function showSuggestionsFunction(){
                 document.getElementById("f6").innerHTML = "";
                 document.getElementById("f10").innerHTML = "";
             }if (!word7){
-                document.getElementById("g1").innerHTML = "7.";
+                document.getElementById("g1").innerHTML = "";
                 document.getElementById("g4").innerHTML = "";
             }if (!word8){
-                document.getElementById("h1").innerHTML = "8.";
+                document.getElementById("h1").innerHTML = "";
                 document.getElementById("h6").innerHTML = "";
                 document.getElementById("h9").innerHTML = "";
                 document.getElementById("h12").innerHTML = "";
             }if (!word9){
-                document.getElementById("i1").innerHTML = "9.";
+                document.getElementById("i1").innerHTML = "";
                 document.getElementById("i5").innerHTML = "";
             }if (!word10){
-                document.getElementById("j1").innerHTML = "10.";
+                document.getElementById("j1").innerHTML = "";
                 document.getElementById("j4").innerHTML = "";
                 document.getElementById("j6").innerHTML = "";
             }if (!word11){
-                document.getElementById("k1").innerHTML = "11.";
+                document.getElementById("k1").innerHTML = "";
                 document.getElementById("k4").innerHTML = "";
                 document.getElementById("k9").innerHTML = "";
             }if (!word12){
-                document.getElementById("l1").innerHTML = "12.";
+                document.getElementById("l1").innerHTML = "";
                 document.getElementById("l4").innerHTML = "";
             }
         }
