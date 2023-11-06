@@ -146,7 +146,7 @@ function submitFunction(){
 
     if (wordInput === wordsList[0] && word1 === false){
         console.log("1) Correct");
-        document.getElementById("wordInput").style.backgroundColor = "green";
+        document.getElementById("wordInput").style.backgroundColor = "#D3D3D3FF";
 
         document.getElementById("a1").innerHTML = lettersList1[0].toUpperCase();
         document.getElementById("a2").innerHTML = lettersList1[1].toUpperCase();
@@ -167,7 +167,7 @@ function submitFunction(){
         word1 = true;
     }else if (wordInput === wordsList[1] && word2 === false){
         console.log("2) Correct");
-        document.getElementById("wordInput").style.backgroundColor = "green";
+        document.getElementById("wordInput").style.backgroundColor = "#D3D3D3FF";
 
         document.getElementById("b1").innerHTML = lettersList2[0].toUpperCase();
         document.getElementById("b2").innerHTML = lettersList2[1].toUpperCase();
@@ -184,7 +184,7 @@ function submitFunction(){
         word2 = true;
     }else if (wordInput === wordsList[2]){
         console.log("3) Correct");
-        document.getElementById("wordInput").style.backgroundColor = "green";
+        document.getElementById("wordInput").style.backgroundColor = "#D3D3D3FF";
 
         document.getElementById("c1").innerHTML = lettersList3[0].toUpperCase();
         document.getElementById("c2").innerHTML = lettersList3[1].toUpperCase();
@@ -204,7 +204,7 @@ function submitFunction(){
         word3 = true;
     }else if (wordInput === wordsList[3]){
         console.log("4) Correct");
-        document.getElementById("wordInput").style.backgroundColor = "green";
+        document.getElementById("wordInput").style.backgroundColor = "#D3D3D3FF";
 
         document.getElementById("d1").innerHTML = lettersList4[0].toUpperCase();
         document.getElementById("d2").innerHTML = lettersList4[1].toUpperCase();
@@ -221,7 +221,7 @@ function submitFunction(){
         word4 = true;
     }else if (wordInput === wordsList[4]){
         console.log("5) Correct");
-        document.getElementById("wordInput").style.backgroundColor = "green";
+        document.getElementById("wordInput").style.backgroundColor = "#D3D3D3FF";
 
         document.getElementById("e1").innerHTML = lettersList5[0].toUpperCase();
         document.getElementById("e2").innerHTML = lettersList5[1].toUpperCase();
@@ -242,7 +242,7 @@ function submitFunction(){
         word5 = true;
     }else if (wordInput === wordsList[5]) {
         console.log("6) Correct");
-        document.getElementById("wordInput").style.backgroundColor = "green";
+        document.getElementById("wordInput").style.backgroundColor = "#D3D3D3FF";
 
         document.getElementById("f1").innerHTML = lettersList6[0].toUpperCase();
         document.getElementById("f2").innerHTML = lettersList6[1].toUpperCase();
@@ -263,7 +263,7 @@ function submitFunction(){
         word6 = true;
     }else if (wordInput === wordsList[6]){
         console.log("7) Correct");
-        document.getElementById("wordInput").style.backgroundColor = "green";
+        document.getElementById("wordInput").style.backgroundColor = "#D3D3D3FF";
 
         document.getElementById("g1").innerHTML = lettersList7[0].toUpperCase();
         document.getElementById("g2").innerHTML = lettersList7[1].toUpperCase();
@@ -279,7 +279,7 @@ function submitFunction(){
         word7 = true;
     }else if (wordInput === wordsList[7]){
         console.log("8) Correct");
-        document.getElementById("wordInput").style.backgroundColor = "green";
+        document.getElementById("wordInput").style.backgroundColor = "#D3D3D3FF";
 
         document.getElementById("h1").innerHTML = lettersList8[0].toUpperCase();
         document.getElementById("h2").innerHTML = lettersList8[1].toUpperCase();
@@ -301,7 +301,7 @@ function submitFunction(){
         word8 = true;
     }else if (wordInput === wordsList[8]){
         console.log("9) Correct");
-        document.getElementById("wordInput").style.backgroundColor = "green";
+        document.getElementById("wordInput").style.backgroundColor = "#D3D3D3FF";
 
         document.getElementById("i1").innerHTML = lettersList9[0].toUpperCase();
         document.getElementById("i2").innerHTML = lettersList9[1].toUpperCase();
@@ -317,7 +317,7 @@ function submitFunction(){
         word9 = true;
     }else if (wordInput === wordsList[9]){
         console.log("10) Correct");
-        document.getElementById("wordInput").style.backgroundColor = "green";
+        document.getElementById("wordInput").style.backgroundColor = "#D3D3D3FF";
 
         document.getElementById("j1").innerHTML = lettersList10[0].toUpperCase();
         document.getElementById("j2").innerHTML = lettersList10[1].toUpperCase();
@@ -333,7 +333,7 @@ function submitFunction(){
         word10 = true;
     }else if (wordInput === wordsList[10]) {
         console.log("11) Correct");
-        document.getElementById("wordInput").style.backgroundColor = "green";
+        document.getElementById("wordInput").style.backgroundColor = "#D3D3D3FF";
 
         document.getElementById("k1").innerHTML = lettersList11[0].toUpperCase();
         document.getElementById("k2").innerHTML = lettersList11[1].toUpperCase();
@@ -351,7 +351,7 @@ function submitFunction(){
         word11 = true;
     }else if (wordInput === wordsList[11]){
         console.log("12) Correct");
-        document.getElementById("wordInput").style.backgroundColor = "green";
+        document.getElementById("wordInput").style.backgroundColor = "#D3D3D3FF";
 
         document.getElementById("l1").innerHTML = lettersList12[0].toUpperCase();
         document.getElementById("l2").innerHTML = lettersList12[1].toUpperCase();
