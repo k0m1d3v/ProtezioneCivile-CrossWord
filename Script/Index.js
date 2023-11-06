@@ -14,6 +14,7 @@ let wordsList = [
 ];
 
 let counter = 0;
+
 let word1 = false;
 let word2 = false;
 let word3 = false;
@@ -27,12 +28,159 @@ let word10 = false;
 let word11 = false;
 let word12 = false;
 
-function ruleUpdateFunction(){
+let allCells = [
+    "a1", "a2", "a3", "a4", "a5", "a6", "a7", "a8","a9", "a10", "a11",
+    "b1", "b2", "b3", "b4", "b5", "b6", "b7",
+    "c1", "c2", "c3", "c4", "c5", "c6", "c7", "c8","c9", "c10",
+    "d1", "d2", "d3", "d4", "d5", "d6", "d7",
+    "e1", "e2", "e3", "e4", "e5", "e6", "e7", "e8", "e9", "e10", "e11",
+    "f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8","f9", "f10", "f11",
+    "g1", "g2", "g3", "g4", "g5", "g6",
+    "h1", "h2", "h3", "h4", "h5", "h6", "h7", "h8","h9", "h10", "h11", "h12",
+    "i1", "i2", "i3", "i4", "i5", "i6",
+    "j1", "j2", "j3", "j4", "j5", "j6", "j7",
+    "k1", "k2", "k3", "k4", "k5", "k6", "k7", "k8","k9",
+    "l1", "l2", "l3", "l4", "l5", "l6", "l7", "l8"
+];
+
+function showSolutionsFunction(){
+    let solStatus = document.getElementById("solutions").checked;
+
+    if (solStatus){
+
+        console.log("Solutions are now set to true");
+
+        document.getElementById("a1").innerHTML = "I";
+        document.getElementById("a2").innerHTML = "N";
+        document.getElementById("a3").innerHTML = "O";
+        document.getElementById("a4").innerHTML = "N";
+        document.getElementById("a5").innerHTML = "D";
+        document.getElementById("a6").innerHTML = "A";
+        document.getElementById("a7").innerHTML = "Z";
+        document.getElementById("a8").innerHTML = "I";
+        document.getElementById("a9").innerHTML = "O";
+        document.getElementById("a10").innerHTML = "N";
+        document.getElementById("a11").innerHTML = "E";
+
+        document.getElementById("b1").innerHTML = "R";
+        document.getElementById("b2").innerHTML = "I";
+        document.getElementById("b3").innerHTML = "S";
+        document.getElementById("b4").innerHTML = "C";
+        document.getElementById("b5").innerHTML = "H";
+        document.getElementById("b6").innerHTML = "I";
+        document.getElementById("b7").innerHTML = "O";
+
+        document.getElementById("c1").innerHTML = "V";
+        document.getElementById("c2").innerHTML = "O";
+        document.getElementById("c3").innerHTML = "L";
+        document.getElementById("c4").innerHTML = "O";
+        document.getElementById("c5").innerHTML = "N";
+        document.getElementById("c6").innerHTML = "T";
+        document.getElementById("c7").innerHTML = "A";
+        document.getElementById("c8").innerHTML = "R";
+        document.getElementById("c9").innerHTML = "I";
+        document.getElementById("c10").innerHTML = "O";
+
+        document.getElementById("d1").innerHTML = "P";
+        document.getElementById("d2").innerHTML = "I";
+        document.getElementById("d3").innerHTML = "O";
+        document.getElementById("d4").innerHTML = "G";
+        document.getElementById("d5").innerHTML = "G";
+        document.getElementById("d6").innerHTML = "I";
+        document.getElementById("d7").innerHTML = "A";
+
+        document.getElementById("e1").innerHTML = "E";
+        document.getElementById("e2").innerHTML = "S";
+        document.getElementById("e3").innerHTML = "P";
+        document.getElementById("e4").innerHTML = "O";
+        document.getElementById("e5").innerHTML = "S";
+        document.getElementById("e6").innerHTML = "I";
+        document.getElementById("e7").innerHTML = "Z";
+        document.getElementById("e8").innerHTML = "I";
+        document.getElementById("e9").innerHTML = "O";
+        document.getElementById("e10").innerHTML = "N";
+        document.getElementById("e11").innerHTML = "E";
+
+        document.getElementById("f1").innerHTML = "P";
+        document.getElementById("f2").innerHTML = "R";
+        document.getElementById("f3").innerHTML = "E";
+        document.getElementById("f4").innerHTML = "V";
+        document.getElementById("f5").innerHTML = "E";
+        document.getElementById("f6").innerHTML = "N";
+        document.getElementById("f7").innerHTML = "Z";
+        document.getElementById("f8").innerHTML = "I";
+        document.getElementById("f9").innerHTML = "O";
+        document.getElementById("f10").innerHTML = "N";
+        document.getElementById("f11").innerHTML = "E";
+
+        document.getElementById("g1").innerHTML = "C";
+        document.getElementById("g2").innerHTML = "I";
+        document.getElementById("g3").innerHTML = "V";
+        document.getElementById("g4").innerHTML = "I";
+        document.getElementById("g5").innerHTML = "L";
+        document.getElementById("g6").innerHTML = "E";
+
+        document.getElementById("h1").innerHTML = "A";
+        document.getElementById("h2").innerHTML = "M";
+        document.getElementById("h3").innerHTML = "B";
+        document.getElementById("h4").innerHTML = "A";
+        document.getElementById("h5").innerHTML = "S";
+        document.getElementById("h6").innerHTML = "C";
+        document.getElementById("h7").innerHTML = "I";
+        document.getElementById("h8").innerHTML = "A";
+        document.getElementById("h9").innerHTML = "T";
+        document.getElementById("h10").innerHTML = "O";
+        document.getElementById("h11").innerHTML = "R";
+        document.getElementById("h12").innerHTML = "I";
+
+        document.getElementById("i1").innerHTML = "S";
+        document.getElementById("i2").innerHTML = "C";
+        document.getElementById("i3").innerHTML = "U";
+        document.getElementById("i4").innerHTML = "O";
+        document.getElementById("i5").innerHTML = "L";
+        document.getElementById("i6").innerHTML = "A";
+
+        document.getElementById("j1").innerHTML = "C";
+        document.getElementById("j2").innerHTML = "H";
+        document.getElementById("j3").innerHTML = "I";
+        document.getElementById("j4").innerHTML = "M";
+        document.getElementById("j5").innerHTML = "I";
+        document.getElementById("j6").innerHTML = "C";
+        document.getElementById("j7").innerHTML = "O";
+
+        document.getElementById("k1").innerHTML = "I";
+        document.getElementById("k2").innerHTML = "N";
+        document.getElementById("k3").innerHTML = "C";
+        document.getElementById("k4").innerHTML = "I";
+        document.getElementById("k5").innerHTML = "D";
+        document.getElementById("k6").innerHTML = "E";
+        document.getElementById("k7").innerHTML = "N";
+        document.getElementById("k8").innerHTML = "T";
+        document.getElementById("k9").innerHTML = "E";
+
+        document.getElementById("l1").innerHTML = "S";
+        document.getElementById("l2").innerHTML = "O";
+        document.getElementById("l3").innerHTML = "C";
+        document.getElementById("l4").innerHTML = "C";
+        document.getElementById("l5").innerHTML = "O";
+        document.getElementById("l6").innerHTML = "R";
+        document.getElementById("l7").innerHTML = "S";
+        document.getElementById("l8").innerHTML = "O";
+    }
+    else{
+        for (let i = 0; i < allCells.length; i++){
+            document.getElementById(allCells[i]).innerHTML = "";
+        }
+    }
+}
+
+function showSuggestionsFunction(){
 
     let suggStatus = document.getElementById("suggestions").checked;
 
     if (suggStatus){
         console.log("Suggestions are now set to true");
+
         document.getElementById("a2").innerHTML = "N";
         document.getElementById("a11").innerHTML = "E";
 
@@ -367,7 +515,10 @@ function submitFunction(){
         counter++;
 
         word12 = true;
-    }else if (counter === 12){
+    }
+
+    if (counter === 12){
+        console.log("You won!");
 
         document.getElementById("wordInput").style.display = "none";
         document.getElementById("submitBtn").style.display = "none";
@@ -386,6 +537,14 @@ function submitFunction(){
         document.getElementById("j2").style.backgroundColor = "green";
         document.getElementById("k1").style.backgroundColor = "green";
         document.getElementById("l8").style.backgroundColor = "green";
+        document.getElementById("solutions").style.display = "none";
+        document.getElementById("solutionsLbl").style.display = "none";
+        document.getElementById("showSolutionBtn").style.display = "none";
+        document.getElementById("suggestions").style.display = "none";
+        document.getElementById("suggestionsLbl").style.display = "none";
+        document.getElementById("showSuggestionsBtn").style.display = "none";
+        document.getElementById("solutions").checked = false;
+        document.getElementById("suggestions").checked = false;
     }else {
         document.getElementById("wordInput").style.backgroundColor = "red";
     }
