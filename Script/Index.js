@@ -146,6 +146,7 @@ function submitFunction(){
 
     if (wordInput === wordsList[0] && word1 === false){
         console.log("1) Correct");
+        document.getElementById("wordInput").style.backgroundColor = "green";
 
         document.getElementById("a1").innerHTML = lettersList1[0].toUpperCase();
         document.getElementById("a2").innerHTML = lettersList1[1].toUpperCase();
@@ -164,8 +165,10 @@ function submitFunction(){
         counter++;
 
         word1 = true;
-    }if (wordInput === wordsList[1] && word2 === false){
+    }else if (wordInput === wordsList[1] && word2 === false){
         console.log("2) Correct");
+        document.getElementById("wordInput").style.backgroundColor = "green";
+
         document.getElementById("b1").innerHTML = lettersList2[0].toUpperCase();
         document.getElementById("b2").innerHTML = lettersList2[1].toUpperCase();
         document.getElementById("b3").innerHTML = lettersList2[2].toUpperCase();
@@ -179,8 +182,10 @@ function submitFunction(){
         counter++;
 
         word2 = true;
-    }if (wordInput === wordsList[2]){
+    }else if (wordInput === wordsList[2]){
         console.log("3) Correct");
+        document.getElementById("wordInput").style.backgroundColor = "green";
+
         document.getElementById("c1").innerHTML = lettersList3[0].toUpperCase();
         document.getElementById("c2").innerHTML = lettersList3[1].toUpperCase();
         document.getElementById("c3").innerHTML = lettersList3[2].toUpperCase();
@@ -197,8 +202,10 @@ function submitFunction(){
         counter++;
 
         word3 = true;
-    }if (wordInput === wordsList[3]){
+    }else if (wordInput === wordsList[3]){
         console.log("4) Correct");
+        document.getElementById("wordInput").style.backgroundColor = "green";
+
         document.getElementById("d1").innerHTML = lettersList4[0].toUpperCase();
         document.getElementById("d2").innerHTML = lettersList4[1].toUpperCase();
         document.getElementById("d3").innerHTML = lettersList4[2].toUpperCase();
@@ -212,8 +219,10 @@ function submitFunction(){
         counter++;
 
         word4 = true;
-    }if (wordInput === wordsList[4]){
+    }else if (wordInput === wordsList[4]){
         console.log("5) Correct");
+        document.getElementById("wordInput").style.backgroundColor = "green";
+
         document.getElementById("e1").innerHTML = lettersList5[0].toUpperCase();
         document.getElementById("e2").innerHTML = lettersList5[1].toUpperCase();
         document.getElementById("e3").innerHTML = lettersList5[2].toUpperCase();
@@ -231,8 +240,10 @@ function submitFunction(){
         counter++;
 
         word5 = true;
-    }if (wordInput === wordsList[5]) {
+    }else if (wordInput === wordsList[5]) {
         console.log("6) Correct");
+        document.getElementById("wordInput").style.backgroundColor = "green";
+
         document.getElementById("f1").innerHTML = lettersList6[0].toUpperCase();
         document.getElementById("f2").innerHTML = lettersList6[1].toUpperCase();
         document.getElementById("f3").innerHTML = lettersList6[2].toUpperCase();
@@ -250,8 +261,10 @@ function submitFunction(){
         counter++;
 
         word6 = true;
-    }if (wordInput === wordsList[6]){
+    }else if (wordInput === wordsList[6]){
         console.log("7) Correct");
+        document.getElementById("wordInput").style.backgroundColor = "green";
+
         document.getElementById("g1").innerHTML = lettersList7[0].toUpperCase();
         document.getElementById("g2").innerHTML = lettersList7[1].toUpperCase();
         document.getElementById("g3").innerHTML = lettersList7[2].toUpperCase();
@@ -264,8 +277,10 @@ function submitFunction(){
         counter++;
 
         word7 = true;
-    }if (wordInput === wordsList[7]){
+    }else if (wordInput === wordsList[7]){
         console.log("8) Correct");
+        document.getElementById("wordInput").style.backgroundColor = "green";
+
         document.getElementById("h1").innerHTML = lettersList8[0].toUpperCase();
         document.getElementById("h2").innerHTML = lettersList8[1].toUpperCase();
         document.getElementById("h3").innerHTML = lettersList8[2].toUpperCase();
@@ -284,8 +299,10 @@ function submitFunction(){
         counter++;
 
         word8 = true;
-    }if (wordInput === wordsList[8]){
+    }else if (wordInput === wordsList[8]){
         console.log("9) Correct");
+        document.getElementById("wordInput").style.backgroundColor = "green";
+
         document.getElementById("i1").innerHTML = lettersList9[0].toUpperCase();
         document.getElementById("i2").innerHTML = lettersList9[1].toUpperCase();
         document.getElementById("i3").innerHTML = lettersList9[2].toUpperCase();
@@ -298,8 +315,10 @@ function submitFunction(){
         counter++;
 
         word9 = true;
-    }if (wordInput === wordsList[9]){
+    }else if (wordInput === wordsList[9]){
         console.log("10) Correct");
+        document.getElementById("wordInput").style.backgroundColor = "green";
+
         document.getElementById("j1").innerHTML = lettersList10[0].toUpperCase();
         document.getElementById("j2").innerHTML = lettersList10[1].toUpperCase();
         document.getElementById("j3").innerHTML = lettersList10[2].toUpperCase();
@@ -312,8 +331,10 @@ function submitFunction(){
         counter++;
 
         word10 = true;
-    }if (wordInput === wordsList[10]) {
+    }else if (wordInput === wordsList[10]) {
         console.log("11) Correct");
+        document.getElementById("wordInput").style.backgroundColor = "green";
+
         document.getElementById("k1").innerHTML = lettersList11[0].toUpperCase();
         document.getElementById("k2").innerHTML = lettersList11[1].toUpperCase();
         document.getElementById("k3").innerHTML = lettersList11[2].toUpperCase();
@@ -328,8 +349,9 @@ function submitFunction(){
         counter++;
 
         word11 = true;
-    }if (wordInput === wordsList[11]){
+    }else if (wordInput === wordsList[11]){
         console.log("12) Correct");
+        document.getElementById("wordInput").style.backgroundColor = "green";
 
         document.getElementById("l1").innerHTML = lettersList12[0].toUpperCase();
         document.getElementById("l2").innerHTML = lettersList12[1].toUpperCase();
@@ -345,7 +367,8 @@ function submitFunction(){
         counter++;
 
         word12 = true;
-    }if (counter === 12){
+    }else if (counter === 12){
+
         document.getElementById("wordInput").style.display = "none";
         document.getElementById("submitBtn").style.display = "none";
         document.getElementById("submitLbl").style.display = "none";
@@ -363,5 +386,7 @@ function submitFunction(){
         document.getElementById("j2").style.backgroundColor = "green";
         document.getElementById("k1").style.backgroundColor = "green";
         document.getElementById("l8").style.backgroundColor = "green";
+    }else {
+        document.getElementById("wordInput").style.backgroundColor = "red";
     }
 }
