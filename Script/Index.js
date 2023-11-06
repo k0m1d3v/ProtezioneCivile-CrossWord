@@ -168,9 +168,140 @@ function showSolutionsFunction(){
         document.getElementById("l8").innerHTML = "O";
     }
     else{
-        for (let i = 0; i < allCells.length; i++){
-            document.getElementById(allCells[i]).innerHTML = "";
+
+        console.log("Solutions are now set to false");
+
+        if (!word1){
+            document.getElementById("a1").innerHTML = "";
+            document.getElementById("a2").innerHTML = "";
+            document.getElementById("a3").innerHTML = "";
+            document.getElementById("a4").innerHTML = "";
+            document.getElementById("a5").innerHTML = "";
+            document.getElementById("a6").innerHTML = "";
+            document.getElementById("a7").innerHTML = "";
+            document.getElementById("a8").innerHTML = "";
+            document.getElementById("a9").innerHTML = "";
+            document.getElementById("a10").innerHTML = "";
+            document.getElementById("a11").innerHTML = "";
         }
+        if (!word2){
+            document.getElementById("b1").innerHTML = "";
+            document.getElementById("b2").innerHTML = "";
+            document.getElementById("b3").innerHTML = "";
+            document.getElementById("b4").innerHTML = "";
+            document.getElementById("b5").innerHTML = "";
+            document.getElementById("b6").innerHTML = "";
+            document.getElementById("b7").innerHTML = "";
+        }
+        if (!word3){
+            document.getElementById("c1").innerHTML = "";
+            document.getElementById("c2").innerHTML = "";
+            document.getElementById("c3").innerHTML = "";
+            document.getElementById("c4").innerHTML = "";
+            document.getElementById("c5").innerHTML = "";
+            document.getElementById("c6").innerHTML = "";
+            document.getElementById("c7").innerHTML = "";
+            document.getElementById("c8").innerHTML = "";
+            document.getElementById("c9").innerHTML = "";
+            document.getElementById("c10").innerHTML = "";
+        }
+        if (!word4){
+            document.getElementById("d1").innerHTML = "";
+            document.getElementById("d2").innerHTML = "";
+            document.getElementById("d3").innerHTML = "";
+            document.getElementById("d4").innerHTML = "";
+            document.getElementById("d5").innerHTML = "";
+            document.getElementById("d6").innerHTML = "";
+            document.getElementById("d7").innerHTML = "";
+        }
+        if (!word5){
+            document.getElementById("e1").innerHTML = "";
+            document.getElementById("e2").innerHTML = "";
+            document.getElementById("e3").innerHTML = "";
+            document.getElementById("e4").innerHTML = "";
+            document.getElementById("e5").innerHTML = "";
+            document.getElementById("e6").innerHTML = "";
+            document.getElementById("e7").innerHTML = "";
+            document.getElementById("e8").innerHTML = "";
+            document.getElementById("e9").innerHTML = "";
+            document.getElementById("e10").innerHTML = "";
+            document.getElementById("e11").innerHTML = "";
+
+        }
+        if (!word6){
+            document.getElementById("f1").innerHTML = "";
+            document.getElementById("f2").innerHTML = "";
+            document.getElementById("f3").innerHTML = "";
+            document.getElementById("f4").innerHTML = "";
+            document.getElementById("f5").innerHTML = "";
+            document.getElementById("f6").innerHTML = "";
+            document.getElementById("f7").innerHTML = "";
+            document.getElementById("f8").innerHTML = "";
+            document.getElementById("f9").innerHTML = "";
+            document.getElementById("f10").innerHTML = "";
+            document.getElementById("f11").innerHTML = "";
+        }
+        if (!word7){
+            document.getElementById("g1").innerHTML = "";
+            document.getElementById("g2").innerHTML = "";
+            document.getElementById("g3").innerHTML = "";
+            document.getElementById("g4").innerHTML = "";
+            document.getElementById("g5").innerHTML = "";
+            document.getElementById("g6").innerHTML = "";
+        }
+        if (!word8){
+            document.getElementById("h1").innerHTML = "";
+            document.getElementById("h2").innerHTML = "";
+            document.getElementById("h3").innerHTML = "";
+            document.getElementById("h4").innerHTML = "";
+            document.getElementById("h5").innerHTML = "";
+            document.getElementById("h6").innerHTML = "";
+            document.getElementById("h7").innerHTML = "";
+            document.getElementById("h8").innerHTML = "";
+            document.getElementById("h9").innerHTML = "";
+            document.getElementById("h10").innerHTML = "";
+            document.getElementById("h11").innerHTML = "";
+            document.getElementById("h12").innerHTML = "";
+        }
+        if (!word9){
+            document.getElementById("i1").innerHTML = "";
+            document.getElementById("i2").innerHTML = "";
+            document.getElementById("i3").innerHTML = "";
+            document.getElementById("i4").innerHTML = "";
+            document.getElementById("i5").innerHTML = "";
+            document.getElementById("i6").innerHTML = "";
+        }
+        if (!word10){
+            document.getElementById("j1").innerHTML = "";
+            document.getElementById("j2").innerHTML = "";
+            document.getElementById("j3").innerHTML = "";
+            document.getElementById("j4").innerHTML = "";
+            document.getElementById("j5").innerHTML = "";
+            document.getElementById("j6").innerHTML = "";
+            document.getElementById("j7").innerHTML = "";
+        }
+        if (!word11){
+            document.getElementById("k1").innerHTML = "";
+            document.getElementById("k2").innerHTML = "";
+            document.getElementById("k3").innerHTML = "";
+            document.getElementById("k4").innerHTML = "";
+            document.getElementById("k5").innerHTML = "";
+            document.getElementById("k6").innerHTML = "";
+            document.getElementById("k7").innerHTML = "";
+            document.getElementById("k8").innerHTML = "";
+            document.getElementById("k9").innerHTML = "";
+        }
+        if (!word12){
+            document.getElementById("l1").innerHTML = "";
+            document.getElementById("l2").innerHTML = "";
+            document.getElementById("l3").innerHTML = "";
+            document.getElementById("l4").innerHTML = "";
+            document.getElementById("l5").innerHTML = "";
+            document.getElementById("l6").innerHTML = "";
+            document.getElementById("l7").innerHTML = "";
+            document.getElementById("l8").innerHTML = "";
+        }
+
     }
 }
 
@@ -515,6 +646,8 @@ function submitFunction(){
         counter++;
 
         word12 = true;
+    }else {
+        document.getElementById("wordInput").style.backgroundColor = "#fa7a7a";
     }
 
     if (counter === 12){
@@ -545,7 +678,5 @@ function submitFunction(){
         document.getElementById("showSuggestionsBtn").style.display = "none";
         document.getElementById("solutions").checked = false;
         document.getElementById("suggestions").checked = false;
-    }else {
-        document.getElementById("wordInput").style.backgroundColor = "red";
     }
 }
