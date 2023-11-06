@@ -27,6 +27,106 @@ let word10 = false;
 let word11 = false;
 let word12 = false;
 
+function ruleUpdateFunction(){
+
+    let suggStatus = document.getElementById("suggestions").checked;
+
+    if (suggStatus){
+        console.log("Suggestions are now set to true");
+        document.getElementById("a2").innerHTML = "N";
+        document.getElementById("a11").innerHTML = "E";
+
+        document.getElementById("b2").innerHTML = "I";
+        document.getElementById("b7").innerHTML = "O";
+
+        document.getElementById("c1").innerHTML = "V";
+        document.getElementById("c4").innerHTML = "O";
+        document.getElementById("c7").innerHTML = "A";
+
+        document.getElementById("d1").innerHTML = "P";
+        document.getElementById("d4").innerHTML = "G";
+
+        document.getElementById("e1").innerHTML = "E";
+        document.getElementById("e5").innerHTML = "S";
+        document.getElementById("e8").innerHTML = "I";
+        document.getElementById("e10").innerHTML = "N";
+
+        document.getElementById("f3").innerHTML = "E";
+        document.getElementById("f6").innerHTML = "N";
+        document.getElementById("f9").innerHTML = "N";
+
+        document.getElementById("g1").innerHTML = "C";
+        document.getElementById("g4").innerHTML = "I";
+
+        document.getElementById("h1").innerHTML = "A";
+        document.getElementById("h6").innerHTML = "C";
+        document.getElementById("h9").innerHTML = "T";
+        document.getElementById("h12").innerHTML = "I";
+
+        document.getElementById("i1").innerHTML = "A";
+
+        document.getElementById("j1").innerHTML = "C";
+        document.getElementById("j4").innerHTML = "M";
+        document.getElementById("j6").innerHTML = "C";
+
+        document.getElementById("k1").innerHTML = "I";
+        document.getElementById("k4").innerHTML = "I";
+        document.getElementById("k9").innerHTML = "E";
+
+        document.getElementById("l1").innerHTML = "S";
+        document.getElementById("l4").innerHTML = "C";
+
+
+    }else{
+        console.log("Suggestions are now set to false");
+
+        if (!word1){
+            document.getElementById("a2").innerHTML = "";
+            document.getElementById("a11").innerHTML = "";
+        }if (!word2){
+            document.getElementById("b2").innerHTML = "";
+            document.getElementById("b7").innerHTML = "";
+        }if (!word3){
+            document.getElementById("c1").innerHTML = "";
+            document.getElementById("c4").innerHTML = "";
+            document.getElementById("c7").innerHTML = "";
+        }if (!word4){
+            document.getElementById("d1").innerHTML = "";
+            document.getElementById("d4").innerHTML = "";
+        }if (!word5){
+            document.getElementById("e1").innerHTML = "";
+            document.getElementById("e5").innerHTML = "";
+            document.getElementById("e8").innerHTML = "";
+            document.getElementById("e10").innerHTML = "";
+        }if (!word6){
+            document.getElementById("f3").innerHTML = "";
+            document.getElementById("f6").innerHTML = "";
+            document.getElementById("f9").innerHTML = "";
+        }if (!word7){
+            document.getElementById("g1").innerHTML = "";
+            document.getElementById("g4").innerHTML = "";
+        }if (!word8){
+            document.getElementById("h1").innerHTML = "";
+            document.getElementById("h6").innerHTML = "";
+            document.getElementById("h9").innerHTML = "";
+            document.getElementById("h12").innerHTML = "";
+        }if (!word9){
+            document.getElementById("i1").innerHTML = "";
+        }if (!word10){
+            document.getElementById("j1").innerHTML = "";
+            document.getElementById("j4").innerHTML = "";
+            document.getElementById("j6").innerHTML = "";
+        }if (!word11){
+            document.getElementById("k1").innerHTML = "";
+            document.getElementById("k4").innerHTML = "";
+            document.getElementById("k9").innerHTML = "";
+        }if (!word12){
+            document.getElementById("l1").innerHTML = "";
+            document.getElementById("l4").innerHTML = "";
+        }
+    }
+}
+
 function submitFunction(){
 
     let wordInput = document.getElementById("wordInput").value.toLowerCase();
@@ -64,9 +164,7 @@ function submitFunction(){
         counter++;
 
         word1 = true;
-    }
-
-    if (wordInput === wordsList[1] && word2 === false){
+    }if (wordInput === wordsList[1] && word2 === false){
         console.log("2) Correct");
         document.getElementById("b1").innerHTML = lettersList2[0].toUpperCase();
         document.getElementById("b2").innerHTML = lettersList2[1].toUpperCase();
@@ -81,9 +179,7 @@ function submitFunction(){
         counter++;
 
         word2 = true;
-    }
-
-    if (wordInput === wordsList[2]){
+    }if (wordInput === wordsList[2]){
         console.log("3) Correct");
         document.getElementById("c1").innerHTML = lettersList3[0].toUpperCase();
         document.getElementById("c2").innerHTML = lettersList3[1].toUpperCase();
@@ -101,9 +197,7 @@ function submitFunction(){
         counter++;
 
         word3 = true;
-    }
-
-    if (wordInput === wordsList[3]){
+    }if (wordInput === wordsList[3]){
         console.log("4) Correct");
         document.getElementById("d1").innerHTML = lettersList4[0].toUpperCase();
         document.getElementById("d2").innerHTML = lettersList4[1].toUpperCase();
@@ -118,9 +212,7 @@ function submitFunction(){
         counter++;
 
         word4 = true;
-    }
-
-    if (wordInput === wordsList[4]){
+    }if (wordInput === wordsList[4]){
         console.log("5) Correct");
         document.getElementById("e1").innerHTML = lettersList5[0].toUpperCase();
         document.getElementById("e2").innerHTML = lettersList5[1].toUpperCase();
@@ -139,9 +231,7 @@ function submitFunction(){
         counter++;
 
         word5 = true;
-    }
-
-    if (wordInput === wordsList[5]){
+    }if (wordInput === wordsList[5]) {
         console.log("6) Correct");
         document.getElementById("f1").innerHTML = lettersList6[0].toUpperCase();
         document.getElementById("f2").innerHTML = lettersList6[1].toUpperCase();
@@ -160,9 +250,7 @@ function submitFunction(){
         counter++;
 
         word6 = true;
-    }
-
-    if (wordInput === wordsList[6]){
+    }if (wordInput === wordsList[6]){
         console.log("7) Correct");
         document.getElementById("g1").innerHTML = lettersList7[0].toUpperCase();
         document.getElementById("g2").innerHTML = lettersList7[1].toUpperCase();
@@ -176,9 +264,7 @@ function submitFunction(){
         counter++;
 
         word7 = true;
-    }
-
-    if (wordInput === wordsList[7]){
+    }if (wordInput === wordsList[7]){
         console.log("8) Correct");
         document.getElementById("h1").innerHTML = lettersList8[0].toUpperCase();
         document.getElementById("h2").innerHTML = lettersList8[1].toUpperCase();
@@ -198,9 +284,7 @@ function submitFunction(){
         counter++;
 
         word8 = true;
-    }
-
-    if (wordInput === wordsList[8]){
+    }if (wordInput === wordsList[8]){
         console.log("9) Correct");
         document.getElementById("i1").innerHTML = lettersList9[0].toUpperCase();
         document.getElementById("i2").innerHTML = lettersList9[1].toUpperCase();
@@ -214,9 +298,7 @@ function submitFunction(){
         counter++;
 
         word9 = true;
-    }
-
-    if (wordInput === wordsList[9]){
+    }if (wordInput === wordsList[9]){
         console.log("10) Correct");
         document.getElementById("j1").innerHTML = lettersList10[0].toUpperCase();
         document.getElementById("j2").innerHTML = lettersList10[1].toUpperCase();
@@ -230,9 +312,7 @@ function submitFunction(){
         counter++;
 
         word10 = true;
-    }
-
-    if (wordInput === wordsList[10]){
+    }if (wordInput === wordsList[10]) {
         console.log("11) Correct");
         document.getElementById("k1").innerHTML = lettersList11[0].toUpperCase();
         document.getElementById("k2").innerHTML = lettersList11[1].toUpperCase();
@@ -248,9 +328,7 @@ function submitFunction(){
         counter++;
 
         word11 = true;
-    }
-
-    if (wordInput === wordsList[11]){
+    }if (wordInput === wordsList[11]){
         console.log("12) Correct");
 
         document.getElementById("l1").innerHTML = lettersList12[0].toUpperCase();
@@ -267,9 +345,7 @@ function submitFunction(){
         counter++;
 
         word12 = true;
-    }
-
-    if (counter === 12){
+    }if (counter === 12){
         document.getElementById("wordInput").style.display = "none";
         document.getElementById("submitBtn").style.display = "none";
         document.getElementById("submitLbl").style.display = "none";

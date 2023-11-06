@@ -1,3 +1,7 @@
+body{
+    background-color: lightcyan;
+}
+
 .FullSquare{
     background-color: transparent;
     width: 25px;
@@ -51,4 +55,16 @@
 
 .Grid{
     background-color: yellow;
+}
+
+button{
+    border-radius: 5px;
+    border: transparent;
+    background-color: lightgray;
+}
+
+input{
+    border-radius: 5px;
+    background-color: lightgray;
+    border: transparent;
 }
