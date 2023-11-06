@@ -168,7 +168,6 @@ function showSolutionsFunction(){
         document.getElementById("l8").innerHTML = "O";
     }
     else{
-
         console.log("Solutions are now set to false");
 
         if (!word1){
